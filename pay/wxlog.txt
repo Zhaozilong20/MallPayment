@@ -1,0 +1,117 @@
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2021-12-14 20:55:26.229  INFO 8180 --- [           main] com.zql.pay.PayApplication               : Starting PayApplication on LAPTOP-PQGB4QBB with PID 8180 (E:\3\java\IDEA_workspace\pay\target\classes started by 赵千理 in E:\3\java\IDEA_workspace\pay)
+2021-12-14 20:55:26.232  INFO 8180 --- [           main] com.zql.pay.PayApplication               : No active profile set, falling back to default profiles: default
+2021-12-14 20:55:26.686  WARN 8180 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zql.pay]' package. Please check your configuration.
+2021-12-14 20:55:26.960  INFO 8180 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-14 20:55:26.975  INFO 8180 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-14 20:55:26.975  INFO 8180 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2021-12-14 20:55:27.081  INFO 8180 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-14 20:55:27.081  INFO 8180 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 821 ms
+2021-12-14 20:55:27.226  INFO 8180 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-14 20:55:27.544  INFO 8180 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-14 20:55:27.546  INFO 8180 --- [           main] com.zql.pay.PayApplication               : Started PayApplication in 1.609 seconds (JVM running for 2.49)
+2021-12-14 20:56:25.851  INFO 8180 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-14 20:56:25.851  INFO 8180 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-14 20:56:25.854  INFO 8180 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-12-14 20:56:26.299  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : --> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+2021-12-14 20:56:26.299  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Content-Type: application/xml; charset=utf-8
+2021-12-14 20:56:26.299  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Content-Length: 433
+2021-12-14 20:56:26.300  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : 
+2021-12-14 20:56:26.300  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : <xml>
+   <appid>wx3e6b9f1c5a7ff034</appid>
+   <mch_id>1614433647</mch_id>
+   <nonce_str>dipY56xbiuec8Hwu</nonce_str>
+   <sign>C8B94333B8335695376F5DA757090C30</sign>
+   <body>3564158-最好的支付sdk</body>
+   <notify_url>http://zql-mall.natapp1.cc/pay/notify</notify_url>
+   <out_trade_no>73289786</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>1</total_fee>
+   <trade_type>NATIVE</trade_type>
+</xml>
+2021-12-14 20:56:26.300  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : --> END POST (433-byte body)
+2021-12-14 20:56:26.798  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : <-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (497ms)
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Server: nginx
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Date: Tue, 14 Dec 2021 12:56:26 GMT
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Content-Type: text/plain
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Content-Length: 528
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Connection: keep-alive
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Keep-Alive: timeout=8
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Cache-Control: no-cache, must-revalidate
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : X-Content-Type-Options: nosniff
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Request-ID: 08FAA8E28D06105718DCDAEEA3062081CC1428B4A304-0
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : MMLAS-VERIFYRESULT: CAAoAQ==
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : Request-ID: 08FAA8E28D06105818D6C1EEA30620F91828E0A401-0
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : 
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<mch_id><![CDATA[1614433647]]></mch_id>
+<appid><![CDATA[wx3e6b9f1c5a7ff034]]></appid>
+<nonce_str><![CDATA[x7m3yAbAJTSKUiVC]]></nonce_str>
+<sign><![CDATA[2153C4F3A99F30F42244DEA48F12DD4E]]></sign>
+<prepay_id><![CDATA[wx14205626186017a4c8049745ef6ba20000]]></prepay_id>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<code_url><![CDATA[weixin://wxpay/bizpayurl?pr=n8Zmnsvzz]]></code_url>
+</xml>
+2021-12-14 20:56:26.799  INFO 8180 --- [nio-8080-exec-1] okhttp3.OkHttpClient                     : <-- END HTTP (528-byte body)
+2021-12-14 20:56:26.811  INFO 8180 --- [nio-8080-exec-1] com.zql.pay.service.impl.PayService      : response=PayResponse(prePayParams=null, payUri=null, appId=wx3e6b9f1c5a7ff034, timeStamp=1639486586, nonceStr=xHRILvjLTzDVUtVp, packAge=prepay_id=wx14205626186017a4c8049745ef6ba20000, signType=MD5, paySign=E19B59168518B70A4497874DC1C0AC77, orderAmount=null, orderId=null, outTradeNo=null, mwebUrl=null, body=null, codeUrl=weixin://wxpay/bizpayurl?pr=n8Zmnsvzz, attach=null, payPlatformEnum=null)
+
+
+
+****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+2021-12-14 21:00:11.526  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : --> POST https://api.mch.weixin.qq.com/pay/unifiedorder http/1.1
+2021-12-14 21:00:11.526  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Content-Type: application/xml; charset=utf-8
+2021-12-14 21:00:11.526  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Content-Length: 433
+2021-12-14 21:00:11.526  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : 
+2021-12-14 21:00:11.526  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : <xml>
+   <appid>wx3e6b9f1c5a7ff034</appid>
+   <mch_id>1614433647</mch_id>
+   <nonce_str>hECfWk0lFlehxOsv</nonce_str>
+   <sign>2E23B5D5225D5A051E02CB0C402C8292</sign>
+   <body>3564158-最好的支付sdk</body>
+   <notify_url>http://zql-mall.natapp1.cc/pay/notify</notify_url>
+   <out_trade_no>73289786</out_trade_no>
+   <spbill_create_ip>8.8.8.8</spbill_create_ip>
+   <total_fee>1</total_fee>
+   <trade_type>NATIVE</trade_type>
+</xml>
+2021-12-14 21:00:11.526  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : --> END POST (433-byte body)
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : <-- 200 OK https://api.mch.weixin.qq.com/pay/unifiedorder (500ms)
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Server: nginx
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Date: Tue, 14 Dec 2021 13:00:11 GMT
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Content-Type: text/plain
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Content-Length: 528
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Connection: keep-alive
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Keep-Alive: timeout=8
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Cache-Control: no-cache, must-revalidate
+2021-12-14 21:00:12.027  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : X-Content-Type-Options: nosniff
+2021-12-14 21:00:12.028  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Request-ID: 08DBAAE28D0610AB0218B0C0C05520F2E0042884E604-0
+2021-12-14 21:00:12.028  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : Request-ID: 08DBAAE28D0610A50218E5D28C5820B5C20A288EF703-0
+2021-12-14 21:00:12.028  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : 
+2021-12-14 21:00:12.028  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<mch_id><![CDATA[1614433647]]></mch_id>
+<appid><![CDATA[wx3e6b9f1c5a7ff034]]></appid>
+<nonce_str><![CDATA[rcQ3xVhsrc0YjYr1]]></nonce_str>
+<sign><![CDATA[8C8CB6630C6EC71B1E39FE8F405EE09B]]></sign>
+<prepay_id><![CDATA[wx14210011444880a4c8049745bf23240000]]></prepay_id>
+<trade_type><![CDATA[NATIVE]]></trade_type>
+<code_url><![CDATA[weixin://wxpay/bizpayurl?pr=B8Uub8rzz]]></code_url>
+</xml>
+2021-12-14 21:00:12.028  INFO 8180 --- [nio-8080-exec-7] okhttp3.OkHttpClient                     : <-- END HTTP (528-byte body)
+2021-12-14 21:00:12.029  INFO 8180 --- [nio-8080-exec-7] com.zql.pay.service.impl.PayService      : response=PayResponse(prePayParams=null, payUri=null, appId=wx3e6b9f1c5a7ff034, timeStamp=1639486812, nonceStr=Zm70ReGXUGTWkj14, packAge=prepay_id=wx14210011444880a4c8049745bf23240000, signType=MD5, paySign=9DA1C2F24ADE2AC4232B938E9F63C656, orderAmount=null, orderId=null, outTradeNo=null, mwebUrl=null, body=null, codeUrl=weixin://wxpay/bizpayurl?pr=B8Uub8rzz, attach=null, payPlatformEnum=null)
+
+****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+2021-12-14 21:02:17.573  INFO 8180 --- [nio-8080-exec-9] com.zql.pay.service.impl.PayService      : payResponse=PayResponse(prePayParams=null, payUri=null, appId=null, timeStamp=null, nonceStr=null, packAge=null, signType=null, paySign=null, orderAmount=0.01, orderId=73289786, outTradeNo=4200001306202112142125784418, mwebUrl=null, body=null, codeUrl=null, attach=null, payPlatformEnum=WX)
+
+
